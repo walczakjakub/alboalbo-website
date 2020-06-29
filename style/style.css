@@ -1,0 +1,81 @@
+body {
+  background-color: black;
+  margin:8px;  
+  font-family: monospace;
+}
+
+#container {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 2000px;
+  margin: auto;
+}
+/*MENU*/
+
+
+
+#menu {
+  padding-inline-start: 0px;
+  padding-top: 40px;
+}
+
+#menu li {
+  display: inline-block;
+  float: left;
+  margin: auto;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 150px;
+  height: 150px;
+  width: 19%;
+  transition: 500ms;
+}
+
+#menu li:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+#menu li:nth-child(3) {
+  background-color: rgb(255, 255, 255);
+}
+
+#logo {
+  height: 150px;
+}
+
+/*SOCIALS*/
+
+#socialsBar {
+  width: 1000px;
+  margin: auto;
+}
+
+#socials {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  list-style: none;
+  padding-inline-start: 0;
+  margin: auto;
+  width: 100%;
+}
+
+#socials li {
+  display: inline-block;
+  float: left;
+  width: 9.72%;
+  height: 40px;
+  text-align: center;  
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+  line-height: 40px;
+  transition: 500ms;
+}
+
+#socials li:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
