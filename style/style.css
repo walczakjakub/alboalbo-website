@@ -10,26 +10,26 @@ body {
   height: 2000px;
   margin: auto;
 }
+
 /*MENU*/
-
-
-
 #menu {
   padding-inline-start: 0px;
+  padding-inline-end: 0px;
   padding-top: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 #menu li {
-  display: inline-block;
-  float: left;
-  margin: auto;
+  vertical-align: middle;
   font-size: 30px;
   text-decoration: none;
   text-align: center;
   line-height: 150px;
-  height: 150px;
-  width: 19%;
+  height: 150px;  
   transition: 500ms;
+  flex-basis: 20%;
 }
 
 #menu li:hover {
@@ -46,7 +46,6 @@ body {
 }
 
 /*SOCIALS*/
-
 #socialsBar {
   width: 1000px;
   margin: auto;
