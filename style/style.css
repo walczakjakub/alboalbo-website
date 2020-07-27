@@ -7,9 +7,9 @@ body {
 #container {
   background-color: rgb(255, 255, 255);
   width: 80%;
-  height: 2000px;
   margin: auto;
 }
+
 
 /*MENU*/
 #menu {
@@ -28,7 +28,7 @@ body {
   text-align: center;
   line-height: 150px;
   height: 150px;  
-  transition: 500ms;
+  transition: 500ms;  
   flex-basis: 20%;
 }
 
@@ -41,9 +41,21 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+#menu a {
+  text-decoration: none;
+  color: #000000;
+  flex-basis: 20%;
+  margin: 0;
+}
+
+#menu a:hover {
+  color: white;
+}
+
 #logo {
   height: 150px;
 }
+
 
 /*SOCIALS*/
 #socials-bar { 
@@ -79,6 +91,7 @@ body {
   background-color: rgb(255, 255, 255);
   color: #000000;
 }
+
 
 /*SQUAD*/
 
@@ -137,7 +150,7 @@ body {
 
 /* VIDEO */
 #video-container{
-  background-color: rgb(235, 227, 227);
+  background-color: rgb(238, 238, 238);
   margin: 100px 0 0 0;
   padding: 50px 0 50px 0;
 }
@@ -147,11 +160,37 @@ body {
 }
 
 .video {
-  margin: 50px;
-  height: 300px;
+  margin: 50px 5px 20px 5px;
   width: 40%;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-info {
+  text-align: center;
+}
+
+.video-info p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  white-space: nowrap;
+}
+
+.video-info p:nth-child(3) {
+  padding-bottom: 10px;
+}
+
+.video-title {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.video-image {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  position: relative
 }
 
 .video img {
@@ -164,3 +203,21 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* SHOWS */
+#shows{
+  padding: 50px 0 50px 0;
+}
+#booking {
+  text-align: center;
+}
+
+#showlist {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  font-size: 20px;
+  border-spacing: 20px;
+  width: auto;
+  max-width: 80%;
+  word-break: break-all;
+}
