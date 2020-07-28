@@ -10,6 +10,7 @@
     <meta name="AlboAlbo Crew" content="AlboAlbo Crew">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -24,11 +25,11 @@
             <a href="#video-container"><li>WIDEO</li></a>
             <li><img src="img/aa_logo.jpg" id="logo"></li>
             <a href="#shows"><li>KONCERTY</li></a>
-            <a href=""><li>KONTAKT</li></a>
+            <a href="#contact-container"><li>KONTAKT</li></a>
           </ul>
         </nav>
       </header>
-
+      <!-- SQUAD -->
       <div id="squad">
         <div class="squad-img-box">
           <img src="img/aa_angie.png">  
@@ -64,6 +65,7 @@
           </p>
         </div>  
       </div>
+      <!-- VIDEO -->
       <div id="video-container">
         <div class="video-row">
           <div class="video">
@@ -117,7 +119,14 @@
             </div>
           </div>
         </div>
+        <div id="more-on-yt">
+          <p>WIĘCEJ NA NASZYM KANALE</p>
+          <form action="http://www.youtube.com/user/STREETWORKERZtv" method="GET" target="_blank">
+            <button id="more-on-yt-button" type="submit">YouTube</button>
+          </form>          
+        </div>
       </div>
+      <!-- SHOWS -->
       <div id="shows">
         <div id="booking">
           <p>BOOKING:</p>
@@ -150,9 +159,17 @@
           </tr>
         </table>
       </div>
+      <!-- CONTACT -->
+      <div id="contact-container">
+        <h1>NAPISZ DO NAS</h1>
+        <form>
+          <input type="email" id="contact-email" placeholder="e-mail">
+          <textarea id="contact-msg" placeholder="twoja wiadomość"></textarea>
+          <button type="submit" id="contact-button">WYŚLIJ</button>
+         </form>
+      </div>
       
-      
-        
+      <!-- SOCIALS -->
       <div id="socials-bar">
           <ul id="socials">
             <li>INSTAGRAM</li>
