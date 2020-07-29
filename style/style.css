@@ -148,6 +148,16 @@ body {
   justify-content: center;
 }
 
+#squad-info {
+  height: 500px;
+  background-color: darkcyan;
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  display: none;
+}
+
 /* VIDEO */
 #video-container{
   background-color: rgb(238, 238, 238);
@@ -280,6 +290,7 @@ body {
   border-style: solid;
   text-indent: 5px;
   font-family: monospace;
+  box-sizing: border-box;
 }
 
 #contact-msg {
@@ -292,6 +303,7 @@ body {
   border-style: solid;  
   text-indent: 5px;  
   font-family: monospace;
+  box-sizing: border-box;
 }
 
 #contact-button {
@@ -304,4 +316,5 @@ body {
   font-family: monospace;
   background-color: black;
   color: white;
+  box-sizing: border-box;
 }
