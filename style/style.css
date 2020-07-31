@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   margin:8px;  
@@ -149,12 +153,17 @@ body {
 }
 
 #squad-info {
-  height: 500px;
-  background-color: darkcyan;
+  height: 625px;
+  background-color: rgb(238, 238, 238, 0.95);
+  border: solid;
+  border-width: 5px;
+  border-color: black;
   width: 500px;
+  padding: 0 10px 0 10px;
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 16%;
+  transform: translate(-50%);
   display: none;
 }
 
