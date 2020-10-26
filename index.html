@@ -66,9 +66,15 @@
         </div> 
       </div>
       <div id="squad-info">
-        <h1 id="squad-info-name"></h1>
+        <div id="squad-info-title">
+          <h1 id="squad-info-name"></h1>
+          <button id="squad-info-close">&times;</button>
+        </div>
+
         <p id="squad-info-bio"></p>
+        
       </div>  
+      <div id="squad-info-overlay"></div>
       
       <!-- VIDEO -->
       <div id="video-container">
@@ -172,23 +178,26 @@
           <textarea id="contact-msg" placeholder="twoja wiadomość"></textarea>
           <button type="submit" id="contact-button">WYŚLIJ</button>
          </form>
+         <footer>&copy; 2020 Kuba Walczak</footer>
       </div>
       
       <!-- SOCIALS -->
       <div id="socials-bar">
           <ul id="socials">
-            <li>INSTAGRAM</li>
-            <li>YOUTUBE</li>
-            <li>FACEBOOK</li>
-            <li>SPOTIFY</li>
-            <li>APPLE MUSIC</li>
-            <li>TIDAL</li>
+            <a href="https://www.youtube.com/user/STREETWORKERZtv?" target="_blank"><li>YOUTUBE</li></a>
+            <a href="https://www.facebook.com/alboalbocrew" target="_blank"><li>FACEBOOK</li></a>
+            <a href="https://open.spotify.com/artist/67xMfoVCxZ2PuIVhWdFNf4?si=QNBuGPEARO2RPPnF4vE2-A" target="_blank"><li>SPOTIFY</li></a>
+            <a href="https://music.apple.com/us/artist/alboalbo/1524226804" target="_blank"><li>APPLE MUSIC</li></a>
           </ul>
       </div> 
     </div>
+    <!-- BACK TO START -->
+    <button id="back-to-start-button"><i class="fas fa-angle-double-up"></i></button>
+    
 
     <!--SCRIPT-->
     <script src="script/objects.js" async defer></script>
     <script src="script/script.js" async defer></script>
+    <script src="https://kit.fontawesome.com/9b8a1980ea.js" crossorigin="anonymous"></script>
   </body>
 </html>

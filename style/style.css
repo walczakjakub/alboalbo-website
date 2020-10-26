@@ -72,14 +72,17 @@ body {
 
 #socials { 
   height: 40px;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  display: flex;
+  justify-content: center;
   list-style: none;  
   padding-inline-start: 0;
   margin: 0;
   width: 100%;
 }
 
+#socials a {
+  width: 20%;
+}
 #socials li {
   height: 40px;
   text-align: center;  
@@ -88,13 +91,19 @@ body {
   vertical-align: middle;
   line-height: 40px;
   transition: 500ms;
-  width: auto;
+  cursor: pointer;
 }
 
 #socials li:hover {
   background-color: rgb(255, 255, 255);
   color: #000000;
 }
+
+#socials a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 /*SQUAD*/
@@ -108,6 +117,7 @@ body {
   overflow: hidden;
   position: relative;
   height: 500px;
+  cursor: pointer;
 }
 
 .squad-img-box img {
@@ -160,11 +170,38 @@ body {
   border-color: black;
   width: 500px;
   padding: 0 10px 0 10px;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 16%;
   transform: translate(-50%);
   display: none;
+  z-index: 5;
+}
+
+#squad-info-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#squad-info-close{
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#squad-info-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 4;
 }
 
 /* VIDEO */
@@ -209,7 +246,13 @@ body {
   width: 100%;
   height: 400px;
   text-align: center;
-  position: relative
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.video-image:hover {
+  transform: scale(0.9);  
 }
 
 .video img {
@@ -241,6 +284,14 @@ body {
   width: 200px;
   border: none;
   outline: none;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+#more-on-yt-button:hover {
+  background-color: white;
+  color: red;
+  border: 5px solid red;
 }
 
 /* SHOWS */
@@ -276,7 +327,7 @@ body {
 #contact-container {
   background-color: rgb(238, 238, 238);
   text-align: center;
-  padding: 50px 0 50px 0;
+  padding: 50px 0 0 0;
   margin-bottom: 50px;
 }
 
@@ -326,4 +377,39 @@ body {
   background-color: black;
   color: white;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+#contact-button:hover {
+  background-color: white;
+  border: solid 5px black;
+  color: black;
+}
+
+/*FOOTER*/
+
+footer {
+  height: 100px;
+  line-height: 100px;
+}
+/* BACK TO START BUTTON */
+
+#back-to-start-button {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.7s;
+  background-color: rgb(238, 238, 238);
+  display: none;
+}
+
+#back-to-start-button:hover {
+  background-color: #000000;
+  color: white;
+  border: 5px solid white;
 }
