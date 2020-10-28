@@ -1,12 +1,12 @@
 // click on squad memeber to see info
-let squadInfo = document.getElementById("squad-info");
-let squadInfoOverlay = document.getElementById("squad-info-overlay");
-let squadInfoClose = document.getElementById("squad-info-close");
-let squadImgBox = document.getElementsByClassName("squad-img-box");
+const squadInfo = document.getElementById("squad-info");
+const squadInfoOverlay = document.getElementById("squad-info-overlay");
+const squadInfoClose = document.getElementById("squad-info-close");
+const squadImgBox = document.getElementsByClassName("squad-img-box");
+const squadInfoSocials = document.querySelector("#squad-info-socials");
 
 if (squadInfo.style.display === "") {
-  for (let i=0; i<5; i++) {  
-    let squadNumber = i;  
+  for (let i = 0; i < 5; i++) {  
     squadImgBox[i].addEventListener("click", showSquadInfo);
 
     function showSquadInfo() {
@@ -16,6 +16,20 @@ if (squadInfo.style.display === "") {
       let infoBio = document.getElementById("squad-info-bio");
       infoName.innerHTML = squadInfoContent[i].name;
       infoBio.innerHTML = squadInfoContent[i].bio;
+
+      // squad info socials
+      let squadInfoObject = squadInfoContent[i];
+      for (let j = 2; j < Object.keys(squadInfoObject).length; j++) {
+        let squadInfoObjectKeys = Object.keys(squadInfoObject);
+        let squadInfoSocialsA = document.createElement("a");
+        squadInfoSocialsA.href = squadInfoObject[squadInfoObjectKeys[j]];
+        squadInfoSocialsA.target = "_blank"
+        let squadInfoSocialsLi = document.createElement("li");
+        squadInfoSocialsA.appendChild(squadInfoSocialsLi);
+        squadInfoSocialsLi.classList.add("squad-info-socials-li");
+        squadInfoSocialsLi.innerHTML = squadInfoObjectKeys[j];
+        squadInfoSocials.appendChild(squadInfoSocialsA);
+      };
     };
   };
 }; 
@@ -27,8 +41,18 @@ function  hideSquadInfo() {
   if (squadInfo.style.display !== "") {
     squadInfo.style.display = "none"; 
     squadInfoOverlay.style.display = "none";  
+    //DELETING SOCIALS LIs
+    while (squadInfoSocials.firstChild) {
+      squadInfoSocials.removeChild(squadInfoSocials.lastChild);
+    };
   };
 };
+
+// for (let i=0; i<5; i++) {
+//   let squadInfoObject = squadInfoContent[i];
+
+// };
+
 
 //BACK TO TOP BUTTON
 const backToStartButton = document.querySelector("#back-to-start-button");

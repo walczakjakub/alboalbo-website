@@ -163,7 +163,6 @@ body {
 }
 
 #squad-info {
-  height: 625px;
   background-color: rgb(238, 238, 238, 0.95);
   border: solid;
   border-width: 5px;
@@ -202,6 +201,26 @@ body {
   right: 0;
   display: none;
   z-index: 4;
+}
+
+#squad-info-socials {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+#squad-info-socials a {
+  flex-basis: auto;
+  flex-grow: 1;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  background-color: #000000;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* VIDEO */
