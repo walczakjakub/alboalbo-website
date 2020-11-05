@@ -221,6 +221,13 @@ body {
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+#squad-info-socials a:hover {
+  background-color: white;
+  color: black;
 }
 
 /* VIDEO */
