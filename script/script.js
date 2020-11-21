@@ -48,12 +48,6 @@ function  hideSquadInfo() {
   };
 };
 
-// for (let i=0; i<5; i++) {
-//   let squadInfoObject = squadInfoContent[i];
-
-// };
-
-
 //BACK TO TOP BUTTON
 const backToStartButton = document.querySelector("#back-to-start-button");
 
@@ -74,3 +68,29 @@ function backToStart() {
   window.scrollTo(0, 0);
 };
 
+//form validation
+const formButton = document.getElementById("contact-button")
+const formError = document.getElementById("form-error");
+const formEmail = document.getElementById("contact-email");
+const formMsg = document.getElementById("contact-msg");
+
+formButton.addEventListener("click", (e) => {
+  if ( ((formEmail.value).toLowerCase().indexOf("@" === -1)) && ((formEmail.value).toLowerCase().indexOf("." === -1)) ) {
+    e.preventDefault();
+    formError.innerText = "Niepoprawny adres e-mail";
+    formError.style.color = "red";
+  } 
+  
+  if ( (formEmail.value.length <= 0) ) {
+    e.preventDefault();
+    formError.innerText = "Podaj adres e-mail";
+    formError.style.color = "red";
+  }
+
+  if ( (formEmail.value.includes("@")) && (formEmail.value.includes(".")) ) {
+    formError.innerText = "Wiadomość wysłana";
+    formError.style.color = "black";
+    formEmail.value = null;
+    formMsg.value = null;
+  }
+});

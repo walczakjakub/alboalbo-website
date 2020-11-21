@@ -413,6 +413,10 @@ body {
   color: black;
 }
 
+#form-error {
+  color: red;
+}
+
 /*FOOTER*/
 
 footer {
