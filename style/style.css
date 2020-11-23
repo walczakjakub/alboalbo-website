@@ -5,7 +5,7 @@ html {
 body {
   background-color: black;
   margin:8px;  
-  font-family: monospace;
+  font-family: 'Barlow', sans-serif;
 }
 
 #container {
@@ -103,8 +103,6 @@ body {
   text-decoration: none;
   color: inherit;
 }
-
-
 
 /*SQUAD*/
 
@@ -443,3 +441,263 @@ footer {
   color: white;
   border: 5px solid white;
 }
+
+/* RWD */
+/* MOBILE */
+@media (max-width: 480px) {
+  
+  body {
+    margin: 0;  
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+  }
+
+  #container {
+    width: 100%;
+    margin: 0;
+  }
+  /* MENU - mobile */
+  #menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  #menu li {
+    width: 100%;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+  }
+
+  #menu li:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
+  #menu a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu a:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  #logo-li {
+    display: none !important;
+  } 
+   /* SQUAD - mobile */
+   #squad {
+    margin: 0;
+    display: block;
+  }
+  .squad-img-box {
+    position: static;
+    height: 60px;
+    margin-top: 5px;
+  }
+  
+  .squad-img-box img {
+    transition: none;
+    transform: scale(1);
+    display: none;
+  }
+  
+  .squad-img-box:hover img {
+    transform: scale(1);
+  }
+  
+  .squad-img-hover, .squad-img-hover-multi {
+    margin: 0;
+    position: static;
+    opacity: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    transition: none;
+  }
+  
+  .squad-img-box:hover .squad-img-hover {
+    opacity: 1;  
+  }
+  
+  .squad-img-hover-multi:hover {
+    opacity: 1;
+  }
+
+  .squad-img-hover-multi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .squad-img-hover-multi p {
+    line-height: 60px;
+    margin: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    flex-basis: auto;
+  
+  }
+  
+  .squad-img-hover-multi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* SQUAD INFO - mobile */
+  #squad-info {
+    border-width: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(0);
+    z-index: 5;
+  }
+  
+  #squad-info-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+
+  #squad-info-bio {
+    padding: 5px;
+  }
+  
+  #squad-info-socials {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  #squad-info-socials a {
+    height: 60px;
+    line-height: 60px;
+    transition: none;
+    margin-top: 5px;
+  }
+  
+  #squad-info-socials a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  /* VIDEO -mobile */
+
+  .video-row {
+    flex-direction: column;
+  }
+
+  .video {
+    margin: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .video-image {
+    transition: none;
+  }
+
+  .video-image:hover {
+    transform: scale(1);  
+  }
+
+  #more-on-yt-button {
+    transition: none;
+  }
+
+  #more-on-yt-button:hover {
+    background-color: red;
+    color: white;
+    border: 5px solid red;
+  }
+  /* CONTACT - mobile*/
+  #contact-container form {
+    width: 90%;
+  }
+
+  #contact-email {
+    height: 60px;
+    font-family: 'Barlow';    
+    font-size: 16px;
+  }
+
+  #contact-msg {
+    font-family: 'Barlow';
+    height: 300px;    
+    font-size: 16px;
+  }
+
+  #contact-button {
+    height: 60px;
+    font-family: 'Barlow';
+    transition: none;
+    font-size: 16px;
+  }
+
+  #contact-button:hover {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+  }
+
+  #form-error {
+    margin-bottom: 5px;
+  }
+
+  /* SOCIALS - mobile*/
+  #socials-bar { 
+    width: 100%;
+    left: 0;
+    background-color: #000000;
+  }
+
+  #socials { 
+    height: 60px;
+    justify-content: space-evenly;
+  }
+  #socials li {
+    height: 60px;
+    line-height: 60px;
+    transition: none;
+  }
+
+  #socials li:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+  }
+
+  /* BACK TO START BUTTON - mobile*/
+
+  #back-to-start-button {
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 65px;
+    right: 0px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: none;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+    display: none;
+  }
+
+  #back-to-start-button:hover {
+    background-color: #000000;
+    color: white;
+    border: none;
+  }
+} /* mobile end */
