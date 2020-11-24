@@ -94,3 +94,29 @@ formButton.addEventListener("click", (e) => {
     formMsg.value = null;
   }
 });
+
+//MOBILE
+  //menu button
+const menuButton = document.getElementById('mobile-menu-button')
+const menu = document.getElementById('menu')
+
+menuButton.addEventListener('click', () => {
+  if(menu.classList.contains("menu-closed")) {
+    menu.classList.remove("menu-closed");
+    menu.classList.add("menu-open");
+  } else if(menu.classList.contains("menu-open")) {
+    menu.classList.remove("menu-open");
+    menu.classList.add("menu-closed");
+  }
+})
+  //menu closing when clicked
+const mobileMenuItems = document.getElementsByClassName("mobile-menu-item");
+let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+if(viewportWidth <= 480) {
+  for(i = 0; i < mobileMenuItems.length; i++) {
+    mobileMenuItems[i].addEventListener('click', () => {      
+      menu.classList.remove("menu-open");
+      menu.classList.add("menu-closed");
+    })
+  }
+}

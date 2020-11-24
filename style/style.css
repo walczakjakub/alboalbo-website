@@ -16,6 +16,11 @@ body {
 
 
 /*MENU*/
+
+#mobile-menu {
+  display: none;
+}
+
 #menu {
   padding-inline-start: 0px;
   padding-inline-end: 0px;
@@ -457,10 +462,63 @@ footer {
     margin: 0;
   }
   /* MENU - mobile */
+
+  #mobile-menu {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    justify-content: space-around;
+    height: 60px;
+    padding: 5px;
+    background-color: white;
+    z-index: 3;
+    width: 100%;
+  }
+
+  #mobile-menu-button {
+    display: inline-block;
+    font-size: 40px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+    flex-basis: 30%;
+  }
+  #mobile-menu-title {
+    height: 60px;
+    display: flex;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  #mobile-menu img {
+    height: 60px;
+  }
+
+  #mobile-menu p {
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0;
+  }
+
   #menu {
     padding: 0;
     margin: 0;
     display: block;
+    position: fixed;
+    top: 70px;
+    z-index: 4;
+    background-color: #ffffff;
+    width: 100%;
+    transition: all 0.5s;
+  }
+
+  .menu-closed {     
+    left: -1000px;
+  }
+  .menu-open { 
+    left: 0px;
   }
 
   #menu li {
@@ -494,6 +552,7 @@ footer {
    /* SQUAD - mobile */
    #squad {
     margin: 0;
+    padding-top: 60px;
     display: block;
   }
   .squad-img-box {
@@ -593,7 +652,9 @@ footer {
     color: rgb(255, 255, 255);
   }
   /* VIDEO -mobile */
-
+  #video-container{ 
+    margin-top: 60px;
+  }
   .video-row {
     flex-direction: column;
   }
@@ -681,18 +742,7 @@ footer {
   /* BACK TO START BUTTON - mobile*/
 
   #back-to-start-button {
-    height: 60px;
-    width: 60px;
-    position: fixed;
-    bottom: 65px;
-    right: 0px;
-    font-size: 26px;
-    cursor: pointer;
-    transition: none;
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
-    border: none;
-    display: none;
+    display: none !important;
   }
 
   #back-to-start-button:hover {
