@@ -751,3 +751,82 @@ footer {
     border: none;
   }
 } /* mobile end */
+
+@media (min-width: 481px) and (max-width: 1066px) {
+  body {
+    margin: 0;
+  }
+  
+  #container {
+    margin: 0;
+    width: 100%;
+  }
+
+  /*MENU*/ 
+  #menu li {
+    font-size: 16px;
+    height: 100px;
+    line-height: 100px;
+  }
+
+  #logo {
+    height: 100px;
+  }
+
+  /*SQUAD*/ 
+  .squad-img-box {
+    height: 300px;
+    line-height: 300px;
+  }
+  .squad-img-box img {
+    height: 300px;
+  }
+
+  .squad-img-hover {
+    line-height: 300px;
+  }
+
+  /*CONTACT*/ 
+  #contact-container form {
+    width: 80%;
+  }
+
+  #contact-email {
+    height: 60px;
+  }
+
+  #contact-button {
+    height: 60px;
+  }
+
+  /*SOCIALS*/ 
+  #socials-bar {
+    width: 80%;
+    left: 11%;
+  }
+
+  #socials {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  #socials li {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  #back-to-start-button {
+    height: 60px;
+    width: 60px;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
+    background-color: #000000;
+    transition: none;
+    border: none;
+  }
+
+  #back-to-start-button:hover {
+    border: none;
+  }
+}
