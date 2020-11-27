@@ -432,7 +432,7 @@ footer {
   height: 100px;
   width: 100px;
   position: fixed;
-  bottom: 0px;
+  bottom: 10px;
   right: 10px;
   font-size: 26px;
   cursor: pointer;
